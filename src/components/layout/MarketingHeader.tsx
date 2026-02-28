@@ -29,16 +29,16 @@ export function MarketingHeader() {
         className={cn(
           'fixed top-0 left-0 right-0 z-40 transition-all duration-300',
           isScrolled
-            ? 'bg-white/80 shadow-sm backdrop-blur-xl dark:bg-gray-950/80 border-b border-gray-200/50 dark:border-gray-800/50'
+            ? 'bg-white/70 shadow-lg shadow-gray-900/[0.04] backdrop-blur-2xl dark:bg-gray-950/70 border-b border-gray-200/60 dark:border-gray-800/40'
             : 'bg-transparent'
         )}
       >
-        <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="/" className="flex items-center gap-2 group" aria-label="NeuraFlow home">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-600 to-neon-purple">
-              <Sparkles className="h-4 w-4 text-white" />
+        <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-[72px] sm:px-6 lg:px-8">
+          <Link href="/" className="flex items-center gap-2.5 group" aria-label="NeuraFlow home">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-neon-purple shadow-md shadow-brand-500/25 transition-transform group-hover:scale-105">
+              <Sparkles className="h-4.5 w-4.5 text-white" />
             </div>
-            <span className="text-lg font-bold font-display text-gray-900 dark:text-white">
+            <span className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
               {siteData.brandName}
             </span>
           </Link>

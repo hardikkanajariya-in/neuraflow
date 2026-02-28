@@ -59,9 +59,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${spaceGrotesk.variable} ${syne.variable}`}>
       <body
-        className={`${spaceGrotesk.variable} ${syne.variable} font-body antialiased bg-white text-gray-900 dark:bg-surface-dark dark:text-gray-100`}
+        className="antialiased bg-white text-gray-900 dark:bg-surface-dark dark:text-gray-100"
+        style={{
+          fontFamily: 'var(--font-body), system-ui, -apple-system, sans-serif',
+        }}
       >
         <Providers>
           <DemoBanner />
