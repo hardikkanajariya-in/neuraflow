@@ -1,0 +1,68 @@
+{
+  "brandName": "NeuraFlow",
+  "tagline": "AI Workflow Automation",
+  "description": "Build, deploy, and scale intelligent automation workflows powered by cutting-edge AI. NeuraFlow transforms how teams handle repetitive tasks, data pipelines, and complex multi-step processes.",
+  "navItems": [
+    { "label": "Features", "href": "/#features" },
+    { "label": "Pricing", "href": "/pricing" },
+    { "label": "Docs", "href": "/docs" },
+    { "label": "Changelog", "href": "/changelog" },
+    { "label": "About", "href": "/about" }
+  ],
+  "footerGroups": [
+    {
+      "title": "Product",
+      "links": [
+        { "label": "Features", "href": "/#features" },
+        { "label": "Pricing", "href": "/pricing" },
+        { "label": "Changelog", "href": "/changelog" },
+        { "label": "Documentation", "href": "/docs" },
+        { "label": "API Reference", "href": "/docs/api-reference" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About", "href": "/about" },
+        { "label": "Contact", "href": "/contact" },
+        { "label": "Careers", "href": "/about#careers" },
+        { "label": "Press Kit", "href": "/about#press" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "Getting Started", "href": "/docs/getting-started" },
+        { "label": "Best Practices", "href": "/docs/best-practices" },
+        { "label": "Integrations", "href": "/docs/integrations" },
+        { "label": "Community", "href": "/about#community" }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        { "label": "Privacy Policy", "href": "/privacy" },
+        { "label": "Terms of Service", "href": "/terms" },
+        { "label": "Cookie Policy", "href": "/privacy#cookies" },
+        { "label": "Security", "href": "/docs/security" }
+      ]
+    }
+  ],
+  "socials": [
+    { "platform": "Twitter", "href": "https://twitter.com/neuraflow", "icon": "Twitter" },
+    { "platform": "GitHub", "href": "https://github.com/neuraflow", "icon": "Github" },
+    { "platform": "LinkedIn", "href": "https://linkedin.com/company/neuraflow", "icon": "Linkedin" },
+    { "platform": "YouTube", "href": "https://youtube.com/@neuraflow", "icon": "Youtube" }
+  ],
+  "seo": {
+    "title": "NeuraFlow — AI Workflow Automation Platform",
+    "description": "Build, deploy, and scale intelligent automation workflows powered by cutting-edge AI. Transform how your team handles repetitive tasks and complex processes.",
+    "ogImage": "/opengraph-image.png",
+    "url": "https://neuraflow.vercel.app"
+  },
+  "credit": {
+    "text": "Created by",
+    "url": "https://hardikkanajariya.in",
+    "name": "hardikkanajariya.in"
+  }
+}

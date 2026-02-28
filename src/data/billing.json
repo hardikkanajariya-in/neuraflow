@@ -1,0 +1,75 @@
+{
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": 0,
+      "period": "month",
+      "features": [
+        "Up to 5 active workflows",
+        "1,000 runs per month",
+        "Basic integrations (20+)",
+        "Community support",
+        "7-day run history",
+        "Single user"
+      ],
+      "current": false
+    },
+    {
+      "id": "pro",
+      "name": "Professional",
+      "price": 49,
+      "period": "month",
+      "features": [
+        "Unlimited active workflows",
+        "50,000 runs per month",
+        "All integrations (200+)",
+        "Priority email support",
+        "90-day run history",
+        "Up to 10 team members",
+        "AI decision engine",
+        "Version control",
+        "Custom webhooks"
+      ],
+      "current": true,
+      "badge": "Current Plan"
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "price": 199,
+      "period": "month",
+      "features": [
+        "Unlimited everything",
+        "Unlimited runs",
+        "All integrations + custom",
+        "24/7 dedicated support",
+        "Unlimited run history",
+        "Unlimited team members",
+        "Advanced AI engine",
+        "SOC 2 compliance",
+        "SSO / SAML",
+        "Custom SLA",
+        "Dedicated account manager"
+      ],
+      "current": false
+    }
+  ],
+  "invoices": [
+    { "id": "inv-001", "date": "2026-02-01", "amount": "$49.00", "status": "paid", "description": "Professional Plan — February 2026" },
+    { "id": "inv-002", "date": "2026-01-01", "amount": "$49.00", "status": "paid", "description": "Professional Plan — January 2026" },
+    { "id": "inv-003", "date": "2025-12-01", "amount": "$49.00", "status": "paid", "description": "Professional Plan — December 2025" },
+    { "id": "inv-004", "date": "2025-11-01", "amount": "$49.00", "status": "paid", "description": "Professional Plan — November 2025" },
+    { "id": "inv-005", "date": "2025-10-01", "amount": "$49.00", "status": "paid", "description": "Professional Plan — October 2025" },
+    { "id": "inv-006", "date": "2025-09-01", "amount": "$49.00", "status": "paid", "description": "Professional Plan — September 2025" },
+    { "id": "inv-007", "date": "2025-08-15", "amount": "$24.50", "status": "paid", "description": "Professional Plan — August 2025 (prorated)" },
+    { "id": "inv-008", "date": "2025-08-01", "amount": "$0.00", "status": "paid", "description": "Starter Plan — August 2025" }
+  ],
+  "usage": [
+    { "label": "API Calls", "used": 40250, "limit": 50000, "unit": "calls" },
+    { "label": "Storage", "used": 2.4, "limit": 10, "unit": "GB" },
+    { "label": "Team Seats", "used": 8, "limit": 10, "unit": "seats" },
+    { "label": "Active Workflows", "used": 24, "limit": 999, "unit": "workflows" }
+  ],
+  "currentPlanId": "pro"
+}

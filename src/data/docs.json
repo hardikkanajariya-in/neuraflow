@@ -1,0 +1,193 @@
+{
+  "categories": ["Getting Started", "Core Concepts", "Integrations", "Security", "API Reference"],
+  "pages": [
+    {
+      "slug": "getting-started",
+      "title": "Getting Started with NeuraFlow",
+      "category": "Getting Started",
+      "description": "Learn how to set up your first workflow automation in under 5 minutes.",
+      "blocks": [
+        { "type": "heading", "level": "h2", "text": "Welcome to NeuraFlow" },
+        { "type": "paragraph", "text": "NeuraFlow is the most powerful AI workflow automation platform available today. This guide walks you through creating your account, setting up your first workspace, and building your first automation — all in under five minutes." },
+        { "type": "image", "photoId": "photo-1555949963-aa79dcee981c", "alt": "Developer workspace with code editor and documentation" },
+        { "type": "heading", "level": "h2", "text": "Step 1: Create Your Workspace" },
+        { "type": "paragraph", "text": "After signing up, you will be prompted to create your first workspace. A workspace is a shared environment where your team collaborates on projects and automations. You can create multiple workspaces for different teams or clients." },
+        { "type": "callout", "variant": "tip", "text": "Choose a descriptive workspace name that reflects your team or project. You can always rename it later from Settings." },
+        { "type": "heading", "level": "h2", "text": "Step 2: Create a Project" },
+        { "type": "paragraph", "text": "Projects organize related automations. Think of them as folders for your workflows. Click the 'New Project' button on the dashboard and choose from a blank template or one of our pre-built starters." },
+        { "type": "heading", "level": "h2", "text": "Step 3: Build Your First Automation" },
+        { "type": "paragraph", "text": "Navigate to the Automations tab within your project and click 'New Automation'. The visual builder opens where you can define your trigger, set conditions, and add action steps." },
+        { "type": "code", "language": "json", "code": "{\n  \"trigger\": {\n    \"type\": \"webhook\",\n    \"endpoint\": \"/api/webhooks/my-first-hook\"\n  },\n  \"actions\": [\n    {\n      \"type\": \"send_email\",\n      \"to\": \"{{trigger.data.email}}\",\n      \"template\": \"welcome\"\n    }\n  ]\n}" },
+        { "type": "callout", "variant": "info", "text": "All automation configurations are version-controlled. You can view history and roll back changes at any time from the automation settings." },
+        { "type": "heading", "level": "h2", "text": "Next Steps" },
+        { "type": "list", "ordered": false, "items": ["Explore the Integration Marketplace to connect your tools", "Set up alert rules to monitor workflow health", "Invite team members and assign roles", "Check out the Best Practices guide for optimization tips"] }
+      ]
+    },
+    {
+      "slug": "workflow-builder",
+      "title": "Visual Workflow Builder",
+      "category": "Core Concepts",
+      "description": "Master the drag-and-drop workflow builder to create complex automation pipelines.",
+      "blocks": [
+        { "type": "heading", "level": "h2", "text": "Understanding the Builder Interface" },
+        { "type": "paragraph", "text": "The Visual Workflow Builder is the heart of NeuraFlow. It provides an intuitive canvas where you connect triggers, conditions, and actions to create powerful automations without writing code." },
+        { "type": "heading", "level": "h2", "text": "Triggers" },
+        { "type": "paragraph", "text": "Every automation starts with a trigger — an event that kicks off the workflow. NeuraFlow supports webhook triggers, scheduled triggers (cron), file upload triggers, and event-based triggers from integrated services." },
+        { "type": "heading", "level": "h3", "text": "Webhook Triggers" },
+        { "type": "paragraph", "text": "Webhook triggers expose a unique URL endpoint. Any HTTP POST request to this endpoint will start your automation with the request body available as input data." },
+        { "type": "code", "language": "bash", "code": "curl -X POST https://api.neuraflow.io/hooks/abc123 \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"user_id\": 42, \"action\": \"signup\"}'" },
+        { "type": "heading", "level": "h2", "text": "Conditions" },
+        { "type": "paragraph", "text": "Conditions act as decision points in your workflow. They evaluate expressions against the data flowing through the pipeline and branch the execution path accordingly. You can chain multiple conditions for complex logic." },
+        { "type": "heading", "level": "h2", "text": "Actions" },
+        { "type": "paragraph", "text": "Actions are the steps that do work — sending emails, calling APIs, transforming data, writing to databases, or triggering other automations. Each action receives data from previous steps and can pass results downstream." },
+        { "type": "callout", "variant": "warning", "text": "Actions execute sequentially by default. Enable parallel execution in the action settings if steps are independent and can run concurrently." }
+      ]
+    },
+    {
+      "slug": "triggers-and-events",
+      "title": "Triggers and Events",
+      "category": "Core Concepts",
+      "description": "Deep dive into all trigger types and how to configure event-based automation starts.",
+      "blocks": [
+        { "type": "heading", "level": "h2", "text": "Trigger Types Overview" },
+        { "type": "paragraph", "text": "NeuraFlow offers four categories of triggers: webhooks, schedules, file events, and service events. Each type can be configured with filters to ensure your automation only runs when the right conditions are met." },
+        { "type": "heading", "level": "h2", "text": "Scheduled Triggers" },
+        { "type": "paragraph", "text": "Use cron expressions to run automations on a schedule. Common patterns include hourly syncs, daily reports, and weekly cleanup tasks. The scheduler runs in UTC and supports second-level precision." },
+        { "type": "code", "language": "text", "code": "# Every 15 minutes\n*/15 * * * *\n\n# Daily at 2 AM UTC\n0 2 * * *\n\n# Every Monday at 9 AM\n0 9 * * 1\n\n# First day of every month\n0 0 1 * *" },
+        { "type": "heading", "level": "h2", "text": "File Event Triggers" },
+        { "type": "paragraph", "text": "Monitor cloud storage buckets (S3, GCS, Azure Blob) for file uploads, modifications, or deletions. Filters support glob patterns to target specific file types or directories." },
+        { "type": "heading", "level": "h2", "text": "Service Event Triggers" },
+        { "type": "paragraph", "text": "Connect to integrated services and react to their native events — new Salesforce records, GitHub pull requests, Stripe payments, Slack messages, and hundreds more." },
+        { "type": "callout", "variant": "tip", "text": "Use trigger filters to reduce noise. Instead of processing every event, filter on specific field values to only start the automation when relevant." }
+      ]
+    },
+    {
+      "slug": "integrations",
+      "title": "Integrations Guide",
+      "category": "Integrations",
+      "description": "Connect NeuraFlow with 200+ services and learn how to build custom integrations.",
+      "blocks": [
+        { "type": "heading", "level": "h2", "text": "Integration Marketplace" },
+        { "type": "paragraph", "text": "NeuraFlow connects natively with 200+ services across categories including CRM, databases, cloud infrastructure, communication, analytics, and developer tools." },
+        { "type": "heading", "level": "h2", "text": "Connecting a Service" },
+        { "type": "paragraph", "text": "Navigate to Settings > Integrations to browse and install integrations. Most services use OAuth 2.0 for authentication — click Connect and authorize NeuraFlow in the provider's consent screen." },
+        { "type": "list", "ordered": true, "items": ["Navigate to Settings > Integrations", "Search for the service you want to connect", "Click Install and follow the OAuth authorization flow", "Configure default settings and permissions", "Test the connection with the built-in test button"] },
+        { "type": "heading", "level": "h2", "text": "Custom Webhooks" },
+        { "type": "paragraph", "text": "For services not in our marketplace, use the Custom Webhook integration. Configure the endpoint URL, HTTP method, headers, and body template. NeuraFlow handles retry logic and error handling automatically." },
+        { "type": "code", "language": "json", "code": "{\n  \"url\": \"https://api.example.com/v1/data\",\n  \"method\": \"POST\",\n  \"headers\": {\n    \"Authorization\": \"Bearer {{secrets.EXAMPLE_API_KEY}}\",\n    \"Content-Type\": \"application/json\"\n  },\n  \"body\": {\n    \"record_id\": \"{{steps.previous.output.id}}\",\n    \"status\": \"processed\"\n  }\n}" },
+        { "type": "callout", "variant": "info", "text": "Store API keys and secrets in the Secrets Manager (Settings > Secrets). Never hardcode credentials in webhook configurations." }
+      ]
+    },
+    {
+      "slug": "security",
+      "title": "Security & Compliance",
+      "category": "Security",
+      "description": "Learn about NeuraFlow's security architecture, certifications, and compliance controls.",
+      "blocks": [
+        { "type": "heading", "level": "h2", "text": "Security Architecture" },
+        { "type": "paragraph", "text": "NeuraFlow employs a defense-in-depth security model with multiple layers of protection. All data is encrypted at rest using AES-256 and in transit using TLS 1.3. Our infrastructure runs on SOC 2 certified cloud providers with multi-region redundancy." },
+        { "type": "image", "photoId": "photo-1563986768609-322da13575f2", "alt": "Security concept visualization with digital lock and network" },
+        { "type": "heading", "level": "h2", "text": "Authentication & Access Control" },
+        { "type": "paragraph", "text": "We support email/password authentication, social login (Google, GitHub), and enterprise SSO via SAML 2.0 and OIDC. Role-based access control (RBAC) lets you define granular permissions for workspace members." },
+        { "type": "heading", "level": "h3", "text": "Available Roles" },
+        { "type": "list", "ordered": false, "items": ["Owner: Full control over workspace, billing, and members", "Admin: Manage projects, automations, and team (except billing)", "Member: Create and run automations in assigned projects", "Viewer: Read-only access to runs and analytics"] },
+        { "type": "heading", "level": "h2", "text": "Compliance Certifications" },
+        { "type": "paragraph", "text": "NeuraFlow maintains SOC 2 Type II certification, GDPR compliance for EU customers, and HIPAA eligibility for healthcare workloads. Audit reports are available on request for Enterprise customers." },
+        { "type": "callout", "variant": "warning", "text": "Enable two-factor authentication for all team members. This can be enforced at the workspace level by Owners and Admins in Settings > Security." }
+      ]
+    },
+    {
+      "slug": "api-reference",
+      "title": "API Reference",
+      "category": "API Reference",
+      "description": "Complete REST API documentation for programmatic access to NeuraFlow resources.",
+      "blocks": [
+        { "type": "heading", "level": "h2", "text": "API Overview" },
+        { "type": "paragraph", "text": "The NeuraFlow REST API provides programmatic access to all platform resources including projects, automations, runs, and team management. All endpoints require authentication via API key or OAuth 2.0 bearer token." },
+        { "type": "heading", "level": "h2", "text": "Authentication" },
+        { "type": "paragraph", "text": "Include your API key in the Authorization header of every request. You can generate API keys from Settings > API Keys in the dashboard." },
+        { "type": "code", "language": "bash", "code": "curl https://api.neuraflow.io/v1/projects \\\n  -H 'Authorization: Bearer nf_live_abc123xyz789'" },
+        { "type": "heading", "level": "h2", "text": "Projects Endpoint" },
+        { "type": "code", "language": "text", "code": "GET    /v1/projects          List all projects\nPOST   /v1/projects          Create a new project\nGET    /v1/projects/:id      Get project details\nPATCH  /v1/projects/:id      Update a project\nDELETE /v1/projects/:id      Delete a project" },
+        { "type": "heading", "level": "h2", "text": "Automations Endpoint" },
+        { "type": "code", "language": "text", "code": "GET    /v1/automations              List automations\nPOST   /v1/automations              Create automation\nGET    /v1/automations/:id          Get automation details\nPATCH  /v1/automations/:id          Update automation\nPOST   /v1/automations/:id/enable   Enable automation\nPOST   /v1/automations/:id/disable  Disable automation" },
+        { "type": "heading", "level": "h2", "text": "Error Handling" },
+        { "type": "paragraph", "text": "The API uses standard HTTP status codes. Error responses include a JSON body with an error code, message, and optional details array for validation errors." },
+        { "type": "code", "language": "json", "code": "{\n  \"error\": {\n    \"code\": \"VALIDATION_ERROR\",\n    \"message\": \"Invalid request body\",\n    \"details\": [\n      { \"field\": \"name\", \"message\": \"Name is required\" },\n      { \"field\": \"trigger.type\", \"message\": \"Invalid trigger type\" }\n    ]\n  }\n}" },
+        { "type": "callout", "variant": "info", "text": "Rate limits: 100 requests per minute for authenticated users. Enterprise customers can request higher limits." }
+      ]
+    },
+    {
+      "slug": "best-practices",
+      "title": "Best Practices",
+      "category": "Core Concepts",
+      "description": "Optimization tips and patterns for building reliable, efficient workflow automations.",
+      "blocks": [
+        { "type": "heading", "level": "h2", "text": "Designing Reliable Workflows" },
+        { "type": "paragraph", "text": "Building reliable automations requires thoughtful design. Follow these best practices to ensure your workflows run smoothly at scale and handle failures gracefully." },
+        { "type": "heading", "level": "h2", "text": "1. Keep Automations Focused" },
+        { "type": "paragraph", "text": "Each automation should do one thing well. Instead of a single giant workflow, create multiple smaller automations that chain together. This improves debugging, testing, and reusability." },
+        { "type": "heading", "level": "h2", "text": "2. Implement Idempotency" },
+        { "type": "paragraph", "text": "Design your actions so they can be safely retried without side effects. Use unique identifiers to check if work has already been done before performing it again. This is critical for financial operations and data modifications." },
+        { "type": "heading", "level": "h2", "text": "3. Use Error Handling Steps" },
+        { "type": "paragraph", "text": "Add error handling actions to catch and process failures. Log errors with enough context for debugging, notify the right people, and consider fallback actions." },
+        { "type": "code", "language": "json", "code": "{\n  \"onError\": {\n    \"retry\": {\n      \"maxAttempts\": 3,\n      \"backoff\": \"exponential\",\n      \"initialDelay\": 1000\n    },\n    \"fallback\": {\n      \"action\": \"notify\",\n      \"channel\": \"#automation-errors\"\n    }\n  }\n}" },
+        { "type": "heading", "level": "h2", "text": "4. Monitor and Alert" },
+        { "type": "paragraph", "text": "Set up alert rules for failure rates, execution times, and error patterns. Proactive monitoring catches issues before they impact your business." },
+        { "type": "callout", "variant": "tip", "text": "Review the Analytics dashboard weekly. Look for trends in execution time and failure rates — gradual increases often indicate underlying issues." }
+      ]
+    },
+    {
+      "slug": "data-transformations",
+      "title": "Data Transformations",
+      "category": "Core Concepts",
+      "description": "Transform, filter, and map data between automation steps with built-in functions.",
+      "blocks": [
+        { "type": "heading", "level": "h2", "text": "Transformation Engine" },
+        { "type": "paragraph", "text": "NeuraFlow includes a powerful data transformation engine that lets you reshape data between steps without code. Use JSONPath expressions, built-in functions, and template syntax to extract, transform, and format data." },
+        { "type": "heading", "level": "h2", "text": "Template Syntax" },
+        { "type": "paragraph", "text": "Use double curly braces to reference data from previous steps. Dot notation navigates nested objects, and array indexing accesses list items." },
+        { "type": "code", "language": "text", "code": "{{trigger.data.user.name}}           → Access nested field\n{{steps.fetch_data.output[0].id}}    → First array item\n{{trigger.data.amount | currency}}   → Apply formatter\n{{env.API_BASE_URL}}                 → Environment variable" },
+        { "type": "heading", "level": "h2", "text": "Built-in Functions" },
+        { "type": "list", "ordered": false, "items": ["uppercase / lowercase — Case conversion", "trim — Remove whitespace", "split(delimiter) — Split string to array", "join(delimiter) — Join array to string", "dateFormat(pattern) — Format dates", "mathRound(decimals) — Round numbers", "jsonParse / jsonStringify — JSON conversion", "base64Encode / base64Decode — Encoding"] },
+        { "type": "callout", "variant": "info", "text": "For complex transformations, use the Code Step with JavaScript or Python instead of chaining multiple built-in functions." }
+      ]
+    },
+    {
+      "slug": "team-management",
+      "title": "Team Management",
+      "category": "Getting Started",
+      "description": "Invite team members, manage roles, and configure workspace permissions.",
+      "blocks": [
+        { "type": "heading", "level": "h2", "text": "Managing Your Team" },
+        { "type": "paragraph", "text": "NeuraFlow workspaces support collaborative automation development. Invite team members, assign roles with appropriate permissions, and manage access at both workspace and project levels." },
+        { "type": "heading", "level": "h2", "text": "Inviting Members" },
+        { "type": "paragraph", "text": "Navigate to Team in the sidebar and click Invite Member. Enter their email address and select a role. They will receive an invitation email with a link to join your workspace." },
+        { "type": "heading", "level": "h2", "text": "Role Permissions" },
+        { "type": "paragraph", "text": "Each role provides a different level of access. Choose the most restrictive role that still allows the member to do their work." },
+        { "type": "list", "ordered": false, "items": ["Owner: Full workspace control including billing and deletion", "Admin: Manage projects, automations, and invitations", "Member: Create, edit, and run automations within assigned projects", "Viewer: Read-only access to view runs, logs, and analytics"] },
+        { "type": "callout", "variant": "warning", "text": "Only the workspace Owner can transfer ownership or delete the workspace. This action cannot be undone." },
+        { "type": "heading", "level": "h2", "text": "Project-Level Access" },
+        { "type": "paragraph", "text": "Beyond workspace roles, you can control access at the project level. Add specific team members to projects to limit who can view and modify automations within each project." }
+      ]
+    },
+    {
+      "slug": "webhooks",
+      "title": "Webhooks Guide",
+      "category": "Integrations",
+      "description": "Configure incoming and outgoing webhooks for custom integrations.",
+      "blocks": [
+        { "type": "heading", "level": "h2", "text": "Incoming Webhooks" },
+        { "type": "paragraph", "text": "Incoming webhooks let external services trigger your automations by sending HTTP requests. Each automation with a webhook trigger gets a unique endpoint URL that accepts POST requests." },
+        { "type": "heading", "level": "h2", "text": "Webhook Security" },
+        { "type": "paragraph", "text": "All webhook endpoints support HMAC signature verification. Include a signature header with your requests and configure the secret in the automation settings." },
+        { "type": "code", "language": "python", "code": "import hmac\nimport hashlib\n\ndef sign_payload(payload: bytes, secret: str) -> str:\n    return hmac.new(\n        secret.encode(),\n        payload,\n        hashlib.sha256\n    ).hexdigest()\n\n# Include as header:\n# X-NeuraFlow-Signature: sha256=<signature>" },
+        { "type": "heading", "level": "h2", "text": "Outgoing Webhooks" },
+        { "type": "paragraph", "text": "Use the HTTP Request action to send data to any external URL. Configure method, headers, body template, and retry policies for reliable delivery." },
+        { "type": "heading", "level": "h2", "text": "Testing Webhooks" },
+        { "type": "paragraph", "text": "Use the built-in webhook tester in the automation builder. It generates a sample payload based on your trigger configuration and executes the automation in test mode without affecting production data." },
+        { "type": "callout", "variant": "tip", "text": "Use tools like ngrok during development to expose your local server and test webhook integrations end-to-end." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "entries": [
+    {
+      "version": "2.4.0",
+      "date": "2026-02-25",
+      "title": "AI Decision Engine v2 & Performance Boost",
+      "changes": [
+        { "type": "added", "text": "AI Decision Engine v2 with contextual learning — routes workflows 40% more accurately based on historical run patterns" },
+        { "type": "added", "text": "Parallel action execution — run independent steps concurrently for up to 3x faster workflows" },
+        { "type": "improved", "text": "Workflow builder canvas performance improved by 60% for automations with 20+ steps" },
+        { "type": "improved", "text": "Dashboard KPI cards now update in real-time via WebSocket connections" },
+        { "type": "fixed", "text": "Resolved issue where scheduled triggers could fire twice during DST transitions" },
+        { "type": "fixed", "text": "Fixed pagination bug in runs table when filtering by multiple statuses simultaneously" }
+      ]
+    },
+    {
+      "version": "2.3.0",
+      "date": "2026-01-18",
+      "title": "Snowflake Integration & Audit Logs",
+      "changes": [
+        { "type": "added", "text": "Native Snowflake data warehouse integration — query, insert, and sync data directly" },
+        { "type": "added", "text": "Comprehensive audit log system with exportable CSV reports for compliance purposes" },
+        { "type": "added", "text": "Custom webhook response templates — return dynamic data from automation results" },
+        { "type": "improved", "text": "Team invitation flow redesigned with role descriptions and bulk invite support" },
+        { "type": "improved", "text": "Error messages now include actionable fix suggestions powered by our knowledge base" },
+        { "type": "fixed", "text": "OAuth token refresh race condition in multi-step automations has been resolved" }
+      ]
+    },
+    {
+      "version": "2.2.0",
+      "date": "2025-12-05",
+      "title": "Version Control & Workflow Templates",
+      "changes": [
+        { "type": "added", "text": "Full version history for automations — view diffs, compare versions, and roll back with one click" },
+        { "type": "added", "text": "Workflow template library with 25 pre-built automation patterns for common use cases" },
+        { "type": "added", "text": "Dark mode support with automatic system preference detection and manual toggle" },
+        { "type": "improved", "text": "Run details panel now shows step-by-step execution timeline with data payloads" },
+        { "type": "fixed", "text": "Resolved memory leak in the workflow builder canvas when switching between large automations" },
+        { "type": "removed", "text": "Deprecated legacy API v0 endpoints — all clients should migrate to v1" }
+      ]
+    },
+    {
+      "version": "2.1.0",
+      "date": "2025-10-22",
+      "title": "Alert Rules & Enhanced Monitoring",
+      "changes": [
+        { "type": "added", "text": "Configurable alert rules with threshold-based triggers for failure rates, latency, and usage" },
+        { "type": "added", "text": "Slack and webhook notification channels for alerts alongside existing email notifications" },
+        { "type": "improved", "text": "Analytics dashboard redesigned with interactive charts, drill-down capabilities, and date range picker" },
+        { "type": "improved", "text": "Search across all entities (projects, automations, runs, docs) via Cmd/Ctrl+K command palette" },
+        { "type": "fixed", "text": "Fixed timezone handling in scheduled triggers for teams spanning multiple regions" }
+      ]
+    },
+    {
+      "version": "2.0.0",
+      "date": "2025-09-01",
+      "title": "NeuraFlow 2.0 — Complete Platform Redesign",
+      "changes": [
+        { "type": "added", "text": "Completely redesigned dashboard with modern UI, improved navigation, and faster load times" },
+        { "type": "added", "text": "Visual workflow builder with drag-and-drop interface replacing the previous form-based editor" },
+        { "type": "added", "text": "AI-powered decision engine for intelligent workflow routing and anomaly detection" },
+        { "type": "added", "text": "200+ native integrations marketplace (up from 50 in v1)" },
+        { "type": "added", "text": "Enterprise features: SSO/SAML, SOC 2 compliance tools, and dedicated support" },
+        { "type": "improved", "text": "API completely rewritten as v1 with RESTful design, better error handling, and comprehensive documentation" },
+        { "type": "removed", "text": "Legacy workflow format — automatic migration provided for all v1 automations" }
+      ]
+    },
+    {
+      "version": "1.8.0",
+      "date": "2025-07-15",
+      "title": "Final v1 Release — Migration Tools",
+      "changes": [
+        { "type": "added", "text": "v1 to v2 migration assistant — automatically converts existing workflows to the new format" },
+        { "type": "added", "text": "Data export tool for downloading all workspace data as JSON or CSV" },
+        { "type": "improved", "text": "API rate limits increased to 100 requests per minute for all paid plans" },
+        { "type": "fixed", "text": "Critical fix for data loss issue when deleting a project with active automations" },
+        { "type": "fixed", "text": "Resolved file upload size validation inconsistency between UI and API" }
+      ]
+    }
+  ]
+}

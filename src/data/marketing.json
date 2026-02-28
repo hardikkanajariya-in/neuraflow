@@ -1,0 +1,220 @@
+{
+  "hero": {
+    "title": "Automate Any Workflow with Intelligent AI Agents",
+    "subtitle": "NeuraFlow lets you design, deploy, and monitor AI-powered automation pipelines in minutes — no code required. Connect your tools, define triggers, and let intelligent agents handle the rest.",
+    "cta": { "text": "Start Building Free", "href": "/app" },
+    "secondaryCta": { "text": "View Documentation", "href": "/docs" },
+    "stats": [
+      { "value": "50K+", "label": "Workflows automated" },
+      { "value": "99.9%", "label": "Uptime SLA" },
+      { "value": "2.5M+", "label": "Tasks completed daily" },
+      { "value": "4.9/5", "label": "Customer satisfaction" }
+    ]
+  },
+  "trustLogos": [
+    { "name": "Vercel" },
+    { "name": "Stripe" },
+    { "name": "Notion" },
+    { "name": "Linear" },
+    { "name": "Figma" },
+    { "name": "Slack" },
+    { "name": "GitHub" },
+    { "name": "Datadog" },
+    { "name": "Snowflake" },
+    { "name": "Confluent" }
+  ],
+  "features": [
+    {
+      "icon": "Brain",
+      "title": "AI-Powered Decision Engine",
+      "description": "Our neural workflow engine learns from your patterns and makes intelligent routing decisions. Reduce manual intervention by 85% with context-aware automation that adapts in real time."
+    },
+    {
+      "icon": "Workflow",
+      "title": "Visual Workflow Builder",
+      "description": "Drag-and-drop interface to design complex automation pipelines. Connect triggers, conditions, and actions in an intuitive canvas — no engineering background needed."
+    },
+    {
+      "icon": "Shield",
+      "title": "Enterprise-Grade Security",
+      "description": "SOC 2 Type II certified with end-to-end encryption, role-based access controls, and comprehensive audit logging. Your data never leaves your chosen region."
+    },
+    {
+      "icon": "Zap",
+      "title": "Real-Time Execution",
+      "description": "Sub-second trigger response times with parallel execution across distributed nodes. Handle millions of events per hour without breaking a sweat."
+    },
+    {
+      "icon": "BarChart3",
+      "title": "Advanced Analytics",
+      "description": "Deep visibility into every workflow run with detailed metrics, cost analysis, and performance benchmarks. Identify bottlenecks before they impact your team."
+    },
+    {
+      "icon": "Plug",
+      "title": "200+ Native Integrations",
+      "description": "Connect with your existing tools out of the box — CRMs, databases, cloud services, messaging platforms, and more. Custom webhook support for any API endpoint."
+    },
+    {
+      "icon": "GitBranch",
+      "title": "Version Control Built-In",
+      "description": "Every workflow change is tracked with full version history. Roll back to any previous state, compare versions, and collaborate with your team safely."
+    },
+    {
+      "icon": "Globe",
+      "title": "Global Edge Deployment",
+      "description": "Deploy workflows to edge nodes closest to your data sources. Automatic failover, geo-routing, and multi-region redundancy keep your automations running 24/7."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "t1",
+      "name": "Sarah Chen",
+      "role": "VP of Engineering",
+      "company": "Meridian Analytics",
+      "avatarId": "photo-1573496359142-b8d87734a5a2",
+      "quote": "NeuraFlow transformed our data pipeline management. We reduced processing time by 73% and eliminated three manual review steps. The AI routing engine is genuinely impressive — it handles edge cases our previous system couldn't even detect.",
+      "rating": 5
+    },
+    {
+      "id": "t2",
+      "name": "Marcus Rivera",
+      "role": "CTO",
+      "company": "Quantum Labs",
+      "avatarId": "photo-1507003211169-0a1dd7228f2d",
+      "quote": "We evaluated seven automation platforms before choosing NeuraFlow. The visual builder alone saved us 200+ engineering hours in Q3. The real game-changer was the built-in version control — our compliance team finally stopped worrying about audit trails.",
+      "rating": 5
+    },
+    {
+      "id": "t3",
+      "name": "Emily Nakamura",
+      "role": "Head of Operations",
+      "company": "Stratos Cloud",
+      "avatarId": "photo-1580489944761-15a19d654956",
+      "quote": "From initial setup to full production deployment, NeuraFlow took us three days instead of the three months we budgeted. The integration library covers every tool we use, and the edge deployment means our APAC customers see zero latency.",
+      "rating": 5
+    },
+    {
+      "id": "t4",
+      "name": "James Whitfield",
+      "role": "Director of DevOps",
+      "company": "NexGen Systems",
+      "avatarId": "photo-1472099645785-5658abf4ff4e",
+      "quote": "The analytics dashboard gives us complete visibility into every workflow execution. We identified a $45K/month cost saving within the first week just by spotting redundant API calls. NeuraFlow pays for itself many times over.",
+      "rating": 5
+    },
+    {
+      "id": "t5",
+      "name": "Priya Kapoor",
+      "role": "Data Science Lead",
+      "company": "Lumina AI",
+      "avatarId": "photo-1573496359142-b8d87734a5a2",
+      "quote": "As someone who works with ML pipelines daily, I was skeptical about a no-code builder. NeuraFlow proved me wrong. The AI decision engine handles model retraining triggers better than our custom Python scripts did.",
+      "rating": 5
+    }
+  ],
+  "pricing": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": 0,
+      "priceAnnual": 0,
+      "description": "For individuals and small projects getting started with workflow automation.",
+      "features": [
+        "Up to 5 active workflows",
+        "1,000 runs per month",
+        "Basic integrations (20+)",
+        "Community support",
+        "7-day run history",
+        "Single user"
+      ],
+      "highlighted": false,
+      "cta": "Get Started Free"
+    },
+    {
+      "id": "pro",
+      "name": "Professional",
+      "price": 49,
+      "priceAnnual": 39,
+      "description": "For growing teams that need powerful automation with advanced features.",
+      "features": [
+        "Unlimited active workflows",
+        "50,000 runs per month",
+        "All integrations (200+)",
+        "Priority email support",
+        "90-day run history",
+        "Up to 10 team members",
+        "AI decision engine",
+        "Version control",
+        "Custom webhooks"
+      ],
+      "highlighted": true,
+      "cta": "Start Free Trial",
+      "badge": "Most Popular"
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "price": 199,
+      "priceAnnual": 159,
+      "description": "For organizations requiring maximum scale, security, and dedicated support.",
+      "features": [
+        "Unlimited everything",
+        "Unlimited runs",
+        "All integrations + custom",
+        "24/7 dedicated support",
+        "Unlimited run history",
+        "Unlimited team members",
+        "AI decision engine (advanced)",
+        "SOC 2 compliance tools",
+        "SSO / SAML",
+        "Custom SLA",
+        "Dedicated account manager",
+        "On-premise deployment option"
+      ],
+      "highlighted": false,
+      "cta": "Contact Sales"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is NeuraFlow and how does it work?",
+      "answer": "NeuraFlow is an AI-powered workflow automation platform that lets you design, deploy, and monitor intelligent automation pipelines. You connect your tools, define triggers and conditions, and our AI engine handles task execution, routing, and error recovery automatically."
+    },
+    {
+      "question": "Do I need coding experience to use NeuraFlow?",
+      "answer": "Not at all. Our visual workflow builder uses a drag-and-drop interface that anyone can use. For advanced users, we also support custom code steps in Python and JavaScript, but they're entirely optional."
+    },
+    {
+      "question": "How does NeuraFlow's AI decision engine differ from simple if/else logic?",
+      "answer": "Traditional automation tools use static rules. NeuraFlow's AI engine learns from your workflow patterns, understands context from previous runs, and makes intelligent routing decisions. It can handle ambiguous inputs, detect anomalies, and adapt its behavior over time."
+    },
+    {
+      "question": "What integrations does NeuraFlow support?",
+      "answer": "We offer 200+ native integrations covering CRMs (Salesforce, HubSpot), databases (PostgreSQL, MongoDB), cloud services (AWS, GCP, Azure), communication tools (Slack, Teams, Email), and many more. Any service with an API can be connected via our custom webhook integration."
+    },
+    {
+      "question": "Is my data secure with NeuraFlow?",
+      "answer": "Absolutely. We are SOC 2 Type II certified with end-to-end AES-256 encryption for data at rest and TLS 1.3 for data in transit. We support role-based access controls, IP allowlisting, and comprehensive audit logging. Enterprise customers can choose their data region."
+    },
+    {
+      "question": "Can I self-host NeuraFlow?",
+      "answer": "Our Enterprise plan includes an on-premise deployment option. You get the same powerful platform running entirely within your own infrastructure, with full control over data residency and network configuration."
+    },
+    {
+      "question": "What happens if a workflow run fails?",
+      "answer": "NeuraFlow includes automatic retry logic with configurable backoff strategies. Failed runs are logged with detailed error context, and you can set up alerts via email, Slack, or webhooks. The AI engine also suggests fixes based on the error pattern."
+    },
+    {
+      "question": "How does pricing work for overages?",
+      "answer": "If you exceed your plan's monthly run limit, additional runs are billed at a per-run rate (visible on your billing page). We send alerts at 80% and 95% usage so you're never surprised. You can also set hard caps to prevent overages entirely."
+    },
+    {
+      "question": "Can I migrate from another automation tool?",
+      "answer": "Yes. We provide migration guides for Zapier, Make (Integromat), n8n, and other popular platforms. Our support team can assist with complex migration projects. Most customers are fully migrated within a week."
+    },
+    {
+      "question": "Is there a free tier available?",
+      "answer": "Yes! Our Starter plan is completely free and includes up to 5 active workflows with 1,000 runs per month. It's a great way to evaluate NeuraFlow before committing to a paid plan. No credit card required."
+    }
+  ]
+}

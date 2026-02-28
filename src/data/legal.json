@@ -1,0 +1,106 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "2026-02-01",
+    "sections": [
+      {
+        "title": "Introduction",
+        "content": "NeuraFlow (\"we\", \"us\", \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our AI workflow automation platform, website, and related services."
+      },
+      {
+        "title": "Information We Collect",
+        "content": "We collect information you provide directly, including your name, email address, company name, and payment information when you create an account. We also collect usage data such as workflow configurations, execution logs, feature usage patterns, and performance metrics to improve our services."
+      },
+      {
+        "title": "How We Use Your Information",
+        "content": "We use collected information to provide and maintain our services, process transactions, send communications about your account, improve our platform through aggregated analytics, comply with legal obligations, and prevent fraud and abuse."
+      },
+      {
+        "title": "Data Storage and Security",
+        "content": "All data is encrypted at rest using AES-256 and in transit using TLS 1.3. We store data in SOC 2 certified data centers with multi-region redundancy. Workflow execution data is retained according to your plan's history limits (7 days for Starter, 90 days for Professional, unlimited for Enterprise)."
+      },
+      {
+        "title": "Third-Party Services",
+        "content": "When you connect integrations, we access third-party services on your behalf using the permissions you grant. We do not sell your data to third parties. We use industry-standard sub-processors for payment processing (Stripe), email delivery (SendGrid), and infrastructure (AWS, Vercel)."
+      },
+      {
+        "title": "Cookies and Tracking",
+        "content": "We use essential cookies for authentication and session management. We use analytics cookies to understand how users interact with our platform. You can disable non-essential cookies through your browser settings or our cookie preferences panel."
+      },
+      {
+        "title": "Your Rights",
+        "content": "You have the right to access, correct, or delete your personal data at any time. You can export all your data from Settings > Data Export. For GDPR-specific requests including right to erasure and data portability, contact our Data Protection Officer at privacy@neuraflow.io."
+      },
+      {
+        "title": "Data Retention",
+        "content": "We retain your account data for as long as your account is active. After account deletion, we remove personal data within 30 days and anonymized analytics within 90 days. Billing records are retained for 7 years as required by law."
+      },
+      {
+        "title": "Children's Privacy",
+        "content": "NeuraFlow is not intended for children under 16 years of age. We do not knowingly collect personal information from children. If we learn we have collected data from a child under 16, we will delete that information promptly."
+      },
+      {
+        "title": "Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of material changes by email or through a prominent notice on our platform at least 30 days before the changes take effect."
+      },
+      {
+        "title": "Contact Us",
+        "content": "If you have questions about this Privacy Policy or our data practices, contact us at privacy@neuraflow.io or write to NeuraFlow Privacy Team, 548 Market Street, Suite 35425, San Francisco, CA 94104."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "2026-02-01",
+    "sections": [
+      {
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using NeuraFlow's AI workflow automation platform, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using our services."
+      },
+      {
+        "title": "Description of Service",
+        "content": "NeuraFlow provides an AI-powered workflow automation platform that enables users to design, deploy, and monitor automated processes. Our services include the web application, API, integrations marketplace, and associated documentation."
+      },
+      {
+        "title": "Account Registration",
+        "content": "You must register for an account to use NeuraFlow. You agree to provide accurate information, maintain the security of your credentials, and promptly notify us of any unauthorized access. You are responsible for all activity under your account."
+      },
+      {
+        "title": "Acceptable Use",
+        "content": "You agree not to use NeuraFlow for any unlawful purpose, to send spam or unsolicited communications, to interfere with or disrupt our services, to attempt to gain unauthorized access to other accounts or systems, or to reverse-engineer our platform."
+      },
+      {
+        "title": "Intellectual Property",
+        "content": "The NeuraFlow platform, including its design, code, algorithms, and documentation, is proprietary and protected by copyright, trademark, and other intellectual property laws. Your workflows and data remain your property — we claim no ownership over content you create."
+      },
+      {
+        "title": "Payment Terms",
+        "content": "Paid plans are billed monthly or annually in advance. All fees are non-refundable except as required by law. We may change pricing with 30 days notice. Usage overages are billed at the end of each billing cycle at the rates specified on your plan page."
+      },
+      {
+        "title": "Service Level Agreement",
+        "content": "We target 99.9% uptime for our Professional and Enterprise plans. Planned maintenance windows are communicated at least 48 hours in advance and scheduled during low-traffic periods. The Starter plan does not include an uptime SLA."
+      },
+      {
+        "title": "Data Processing",
+        "content": "We process your data solely to provide and improve our services. For Enterprise customers, we offer a Data Processing Agreement (DPA) compliant with GDPR requirements. You retain full ownership and control of your data at all times."
+      },
+      {
+        "title": "Limitation of Liability",
+        "content": "To the maximum extent permitted by law, NeuraFlow shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our services. Our total liability shall not exceed the amount paid by you in the twelve months preceding the claim."
+      },
+      {
+        "title": "Termination",
+        "content": "Either party may terminate this agreement at any time. Upon termination, your access to the platform will be revoked and your data will be available for export for 30 days, after which it will be permanently deleted."
+      },
+      {
+        "title": "Governing Law",
+        "content": "These Terms shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to conflict of law provisions. Any disputes shall be resolved in the federal or state courts located in San Francisco County."
+      },
+      {
+        "title": "Contact",
+        "content": "For questions about these Terms of Service, contact us at legal@neuraflow.io or write to NeuraFlow Legal Team, 548 Market Street, Suite 35425, San Francisco, CA 94104."
+      }
+    ]
+  }
+}

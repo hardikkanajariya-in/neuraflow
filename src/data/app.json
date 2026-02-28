@@ -1,0 +1,304 @@
+{
+  "sidebarNav": [
+    { "label": "Overview", "href": "/app", "icon": "LayoutDashboard", "section": "Main" },
+    { "label": "Projects", "href": "/app/projects", "icon": "FolderKanban", "section": "Main" },
+    { "label": "Automations", "href": "/app/automations", "icon": "Workflow", "section": "Main" },
+    { "label": "Runs", "href": "/app/runs", "icon": "Play", "badge": "3", "section": "Main" },
+    { "label": "Alerts", "href": "/app/alerts", "icon": "Bell", "section": "Monitor" },
+    { "label": "Team", "href": "/app/team", "icon": "Users", "section": "Monitor" },
+    { "label": "Billing", "href": "/app/billing", "icon": "CreditCard", "section": "Account" },
+    { "label": "Settings", "href": "/app/settings", "icon": "Settings", "section": "Account" }
+  ],
+  "user": {
+    "name": "Alex Morgan",
+    "email": "alex@neuraflow.io",
+    "avatarId": "photo-1472099645785-5658abf4ff4e",
+    "role": "Admin"
+  },
+  "workspaces": [
+    { "id": "ws-1", "name": "NeuraFlow HQ", "slug": "neuraflow-hq", "memberCount": 12 },
+    { "id": "ws-2", "name": "Client Projects", "slug": "client-projects", "memberCount": 5 },
+    { "id": "ws-3", "name": "Research Lab", "slug": "research-lab", "memberCount": 3 }
+  ],
+  "projects": [
+    {
+      "id": "proj-001",
+      "name": "Customer Onboarding Pipeline",
+      "description": "Automated customer onboarding flow including email verification, CRM entry, welcome sequence, and initial setup tasks.",
+      "status": "active",
+      "createdAt": "2025-11-15T10:30:00Z",
+      "updatedAt": "2026-02-27T14:22:00Z",
+      "metrics": { "totalRuns": 12450, "successRate": 98.7, "avgDuration": "4.2s" },
+      "automationCount": 4,
+      "teamMembers": ["Alex Morgan", "Sarah Chen", "James Lee"]
+    },
+    {
+      "id": "proj-002",
+      "name": "Data Sync Engine",
+      "description": "Bi-directional data synchronization between Salesforce, HubSpot, and internal PostgreSQL databases with conflict resolution.",
+      "status": "active",
+      "createdAt": "2025-12-01T09:00:00Z",
+      "updatedAt": "2026-02-26T18:45:00Z",
+      "metrics": { "totalRuns": 34200, "successRate": 99.2, "avgDuration": "2.8s" },
+      "automationCount": 3,
+      "teamMembers": ["Alex Morgan", "Priya Patel"]
+    },
+    {
+      "id": "proj-003",
+      "name": "ML Model Retraining",
+      "description": "Scheduled retraining pipeline for production ML models. Monitors data drift, triggers retraining, validates performance, and deploys updates.",
+      "status": "active",
+      "createdAt": "2026-01-10T11:15:00Z",
+      "updatedAt": "2026-02-28T08:00:00Z",
+      "metrics": { "totalRuns": 892, "successRate": 96.4, "avgDuration": "12.5m" },
+      "automationCount": 2,
+      "teamMembers": ["Alex Morgan", "Emily Nakamura", "Raj Gupta"]
+    },
+    {
+      "id": "proj-004",
+      "name": "Invoice Processing",
+      "description": "OCR-powered invoice extraction, validation against purchase orders, approval routing, and payment initiation workflow.",
+      "status": "active",
+      "createdAt": "2025-10-20T14:00:00Z",
+      "updatedAt": "2026-02-25T16:30:00Z",
+      "metrics": { "totalRuns": 8760, "successRate": 97.8, "avgDuration": "6.1s" },
+      "automationCount": 3,
+      "teamMembers": ["Sarah Chen", "James Lee"]
+    },
+    {
+      "id": "proj-005",
+      "name": "Security Alert Triage",
+      "description": "AI-powered security alert classification, severity scoring, ticket creation, and escalation routing for the SOC team.",
+      "status": "paused",
+      "createdAt": "2025-09-05T08:30:00Z",
+      "updatedAt": "2026-02-20T12:00:00Z",
+      "metrics": { "totalRuns": 45200, "successRate": 99.5, "avgDuration": "1.3s" },
+      "automationCount": 5,
+      "teamMembers": ["Alex Morgan", "Marcus Rivera"]
+    },
+    {
+      "id": "proj-006",
+      "name": "Content Publishing Pipeline",
+      "description": "End-to-end content workflow from draft review to SEO optimization, social scheduling, and performance tracking.",
+      "status": "completed",
+      "createdAt": "2025-08-12T10:00:00Z",
+      "updatedAt": "2026-01-15T09:00:00Z",
+      "metrics": { "totalRuns": 3420, "successRate": 94.2, "avgDuration": "8.7s" },
+      "automationCount": 4,
+      "teamMembers": ["Priya Patel", "Emily Nakamura"]
+    },
+    {
+      "id": "proj-007",
+      "name": "Slack Bot Orchestrator",
+      "description": "Intelligent Slack bot that routes messages, automates responses, creates tickets, and escalates urgent requests to on-call engineers.",
+      "status": "active",
+      "createdAt": "2026-01-20T16:45:00Z",
+      "updatedAt": "2026-02-28T10:15:00Z",
+      "metrics": { "totalRuns": 67800, "successRate": 99.1, "avgDuration": "0.8s" },
+      "automationCount": 6,
+      "teamMembers": ["Alex Morgan", "James Lee", "Sarah Chen", "Raj Gupta"]
+    },
+    {
+      "id": "proj-008",
+      "name": "E-commerce Order Flow",
+      "description": "Order processing pipeline handling inventory checks, payment validation, fulfillment routing, and shipping notification automation.",
+      "status": "draft",
+      "createdAt": "2026-02-15T13:00:00Z",
+      "updatedAt": "2026-02-27T11:30:00Z",
+      "metrics": { "totalRuns": 0, "successRate": 0, "avgDuration": "0s" },
+      "automationCount": 0,
+      "teamMembers": ["Alex Morgan"]
+    },
+    {
+      "id": "proj-009",
+      "name": "HR Onboarding Automation",
+      "description": "New employee onboarding with account provisioning, equipment requests, training enrollment, and manager notifications.",
+      "status": "active",
+      "createdAt": "2025-11-01T09:00:00Z",
+      "updatedAt": "2026-02-24T15:00:00Z",
+      "metrics": { "totalRuns": 1240, "successRate": 98.1, "avgDuration": "15.2s" },
+      "automationCount": 3,
+      "teamMembers": ["Priya Patel", "Emily Nakamura"]
+    },
+    {
+      "id": "proj-010",
+      "name": "API Health Monitor",
+      "description": "Continuous monitoring of 50+ API endpoints with latency tracking, error rate alerting, and automatic incident creation.",
+      "status": "active",
+      "createdAt": "2025-12-15T07:00:00Z",
+      "updatedAt": "2026-02-28T06:00:00Z",
+      "metrics": { "totalRuns": 156000, "successRate": 99.8, "avgDuration": "0.5s" },
+      "automationCount": 2,
+      "teamMembers": ["Marcus Rivera", "Raj Gupta"]
+    }
+  ],
+  "automations": [
+    {
+      "id": "auto-001",
+      "name": "New User Welcome Sequence",
+      "description": "Triggers when a new user signs up, sends verification email, creates CRM contact, and starts drip campaign.",
+      "projectId": "proj-001",
+      "enabled": true,
+      "trigger": { "id": "s1", "type": "trigger", "label": "Webhook: New Signup", "config": "POST /api/webhooks/signup", "icon": "Webhook" },
+      "conditions": [
+        { "id": "s2", "type": "condition", "label": "Email Verified", "config": "user.emailVerified === true", "icon": "CheckCircle" },
+        { "id": "s3", "type": "condition", "label": "Plan Type Check", "config": "user.plan !== 'free'", "icon": "Filter" }
+      ],
+      "actions": [
+        { "id": "s4", "type": "action", "label": "Create CRM Contact", "config": "Salesforce → Contacts.create()", "icon": "UserPlus" },
+        { "id": "s5", "type": "action", "label": "Send Welcome Email", "config": "SendGrid → template: welcome-v2", "icon": "Mail" },
+        { "id": "s6", "type": "action", "label": "Notify Slack", "config": "#new-signups → formatted message", "icon": "MessageSquare" }
+      ],
+      "lastRunAt": "2026-02-28T09:45:00Z",
+      "runCount": 4200
+    },
+    {
+      "id": "auto-002",
+      "name": "CRM Data Sync",
+      "description": "Bi-directional sync between Salesforce and HubSpot with conflict resolution and field mapping.",
+      "projectId": "proj-002",
+      "enabled": true,
+      "trigger": { "id": "s1", "type": "trigger", "label": "Schedule: Every 15 min", "config": "cron: */15 * * * *", "icon": "Clock" },
+      "conditions": [
+        { "id": "s2", "type": "condition", "label": "Records Modified", "config": "lastModified > lastSyncTimestamp", "icon": "RefreshCw" }
+      ],
+      "actions": [
+        { "id": "s3", "type": "action", "label": "Fetch Changed Records", "config": "Salesforce → query modified contacts", "icon": "Download" },
+        { "id": "s4", "type": "action", "label": "Transform & Map Fields", "config": "Apply field mapping rules v3", "icon": "ArrowRightLeft" },
+        { "id": "s5", "type": "action", "label": "Upsert to HubSpot", "config": "HubSpot → contacts.batchUpsert()", "icon": "Upload" }
+      ],
+      "lastRunAt": "2026-02-28T10:00:00Z",
+      "runCount": 18500
+    },
+    {
+      "id": "auto-003",
+      "name": "Model Drift Detector",
+      "description": "Monitors production ML model performance metrics and triggers retraining when accuracy drops below threshold.",
+      "projectId": "proj-003",
+      "enabled": true,
+      "trigger": { "id": "s1", "type": "trigger", "label": "Schedule: Daily 2 AM", "config": "cron: 0 2 * * *", "icon": "Clock" },
+      "conditions": [
+        { "id": "s2", "type": "condition", "label": "Accuracy Check", "config": "model.accuracy < 0.95", "icon": "TrendingDown" },
+        { "id": "s3", "type": "condition", "label": "Data Volume Check", "config": "newSamples > 10000", "icon": "Database" }
+      ],
+      "actions": [
+        { "id": "s4", "type": "action", "label": "Launch Retraining Job", "config": "SageMaker → training.start(config_v2)", "icon": "Cpu" },
+        { "id": "s5", "type": "action", "label": "Notify ML Team", "config": "#ml-alerts → drift report", "icon": "MessageSquare" }
+      ],
+      "lastRunAt": "2026-02-28T02:00:00Z",
+      "runCount": 420
+    },
+    {
+      "id": "auto-004",
+      "name": "Invoice OCR & Routing",
+      "description": "Extracts data from uploaded invoices using OCR, validates against POs, and routes for approval.",
+      "projectId": "proj-004",
+      "enabled": true,
+      "trigger": { "id": "s1", "type": "trigger", "label": "File Upload: S3 Bucket", "config": "s3://invoices/incoming/*", "icon": "Upload" },
+      "conditions": [
+        { "id": "s2", "type": "condition", "label": "File Type Check", "config": "file.type in ['pdf', 'png', 'jpg']", "icon": "FileCheck" }
+      ],
+      "actions": [
+        { "id": "s3", "type": "action", "label": "OCR Extraction", "config": "Textract → extract fields", "icon": "ScanText" },
+        { "id": "s4", "type": "action", "label": "PO Validation", "config": "Match against PO database", "icon": "CheckSquare" },
+        { "id": "s5", "type": "action", "label": "Route for Approval", "config": "If amount > $5K → VP else → Manager", "icon": "GitBranch" }
+      ],
+      "lastRunAt": "2026-02-27T16:30:00Z",
+      "runCount": 6800
+    },
+    {
+      "id": "auto-005",
+      "name": "Security Alert Classifier",
+      "description": "AI-powered classification of security alerts with severity scoring and automatic ticket creation.",
+      "projectId": "proj-005",
+      "enabled": false,
+      "trigger": { "id": "s1", "type": "trigger", "label": "Event: SIEM Alert", "config": "Splunk → alert stream", "icon": "ShieldAlert" },
+      "conditions": [
+        { "id": "s2", "type": "condition", "label": "Severity > Medium", "config": "alert.severity >= 3", "icon": "AlertTriangle" }
+      ],
+      "actions": [
+        { "id": "s3", "type": "action", "label": "AI Classification", "config": "GPT-4 → classify + score", "icon": "Brain" },
+        { "id": "s4", "type": "action", "label": "Create Jira Ticket", "config": "Jira → security-incidents project", "icon": "Ticket" },
+        { "id": "s5", "type": "action", "label": "Page On-Call", "config": "PagerDuty → if critical", "icon": "Phone" }
+      ],
+      "lastRunAt": "2026-02-20T11:45:00Z",
+      "runCount": 34800
+    },
+    {
+      "id": "auto-006",
+      "name": "Slack Command Router",
+      "description": "Intelligent routing of Slack slash commands to appropriate automations and response handlers.",
+      "projectId": "proj-007",
+      "enabled": true,
+      "trigger": { "id": "s1", "type": "trigger", "label": "Slack: Slash Command", "config": "/neuraflow [action] [params]", "icon": "MessageSquare" },
+      "conditions": [
+        { "id": "s2", "type": "condition", "label": "Auth Check", "config": "user.role >= 'member'", "icon": "Lock" },
+        { "id": "s3", "type": "condition", "label": "Rate Limit", "config": "requests < 10/min per user", "icon": "Timer" }
+      ],
+      "actions": [
+        { "id": "s4", "type": "action", "label": "Parse Command", "config": "NLP → extract intent + entities", "icon": "Brain" },
+        { "id": "s5", "type": "action", "label": "Execute Action", "config": "Route to matching automation", "icon": "Play" },
+        { "id": "s6", "type": "action", "label": "Send Response", "config": "Slack → ephemeral or channel reply", "icon": "Send" }
+      ],
+      "lastRunAt": "2026-02-28T10:12:00Z",
+      "runCount": 52400
+    }
+  ],
+  "runs": [
+    { "id": "run-001", "automationId": "auto-001", "automationName": "New User Welcome Sequence", "projectId": "proj-001", "status": "success", "duration": "3.8s", "startedAt": "2026-02-28T10:45:00Z", "completedAt": "2026-02-28T10:45:04Z", "stepsCompleted": 5, "totalSteps": 5 },
+    { "id": "run-002", "automationId": "auto-002", "automationName": "CRM Data Sync", "projectId": "proj-002", "status": "success", "duration": "2.1s", "startedAt": "2026-02-28T10:30:00Z", "completedAt": "2026-02-28T10:30:02Z", "stepsCompleted": 4, "totalSteps": 4 },
+    { "id": "run-003", "automationId": "auto-006", "automationName": "Slack Command Router", "projectId": "proj-007", "status": "running", "duration": "0.4s", "startedAt": "2026-02-28T10:12:00Z", "completedAt": "", "stepsCompleted": 2, "totalSteps": 5 },
+    { "id": "run-004", "automationId": "auto-004", "automationName": "Invoice OCR & Routing", "projectId": "proj-004", "status": "failed", "duration": "5.6s", "startedAt": "2026-02-28T09:55:00Z", "completedAt": "2026-02-28T09:55:06Z", "stepsCompleted": 2, "totalSteps": 4, "errorMessage": "OCR extraction timeout: file size exceeds 25MB limit. Consider splitting multi-page documents." },
+    { "id": "run-005", "automationId": "auto-001", "automationName": "New User Welcome Sequence", "projectId": "proj-001", "status": "success", "duration": "4.1s", "startedAt": "2026-02-28T09:40:00Z", "completedAt": "2026-02-28T09:40:04Z", "stepsCompleted": 5, "totalSteps": 5 },
+    { "id": "run-006", "automationId": "auto-003", "automationName": "Model Drift Detector", "projectId": "proj-003", "status": "success", "duration": "14.2m", "startedAt": "2026-02-28T02:00:00Z", "completedAt": "2026-02-28T02:14:12Z", "stepsCompleted": 4, "totalSteps": 4 },
+    { "id": "run-007", "automationId": "auto-002", "automationName": "CRM Data Sync", "projectId": "proj-002", "status": "success", "duration": "1.9s", "startedAt": "2026-02-28T10:15:00Z", "completedAt": "2026-02-28T10:15:02Z", "stepsCompleted": 4, "totalSteps": 4 },
+    { "id": "run-008", "automationId": "auto-006", "automationName": "Slack Command Router", "projectId": "proj-007", "status": "success", "duration": "0.6s", "startedAt": "2026-02-28T10:05:00Z", "completedAt": "2026-02-28T10:05:01Z", "stepsCompleted": 5, "totalSteps": 5 },
+    { "id": "run-009", "automationId": "auto-001", "automationName": "New User Welcome Sequence", "projectId": "proj-001", "status": "failed", "duration": "2.3s", "startedAt": "2026-02-28T08:30:00Z", "completedAt": "2026-02-28T08:30:02Z", "stepsCompleted": 3, "totalSteps": 5, "errorMessage": "SendGrid API rate limit exceeded. Retry scheduled in 60 seconds." },
+    { "id": "run-010", "automationId": "auto-002", "automationName": "CRM Data Sync", "projectId": "proj-002", "status": "success", "duration": "3.4s", "startedAt": "2026-02-28T10:00:00Z", "completedAt": "2026-02-28T10:00:03Z", "stepsCompleted": 4, "totalSteps": 4 },
+    { "id": "run-011", "automationId": "auto-004", "automationName": "Invoice OCR & Routing", "projectId": "proj-004", "status": "success", "duration": "5.8s", "startedAt": "2026-02-27T16:30:00Z", "completedAt": "2026-02-27T16:30:06Z", "stepsCompleted": 4, "totalSteps": 4 },
+    { "id": "run-012", "automationId": "auto-006", "automationName": "Slack Command Router", "projectId": "proj-007", "status": "success", "duration": "0.5s", "startedAt": "2026-02-28T09:58:00Z", "completedAt": "2026-02-28T09:58:01Z", "stepsCompleted": 5, "totalSteps": 5 },
+    { "id": "run-013", "automationId": "auto-001", "automationName": "New User Welcome Sequence", "projectId": "proj-001", "status": "queued", "duration": "0s", "startedAt": "2026-02-28T10:50:00Z", "completedAt": "", "stepsCompleted": 0, "totalSteps": 5 },
+    { "id": "run-014", "automationId": "auto-003", "automationName": "Model Drift Detector", "projectId": "proj-003", "status": "success", "duration": "11.8m", "startedAt": "2026-02-27T02:00:00Z", "completedAt": "2026-02-27T02:11:48Z", "stepsCompleted": 4, "totalSteps": 4 },
+    { "id": "run-015", "automationId": "auto-002", "automationName": "CRM Data Sync", "projectId": "proj-002", "status": "success", "duration": "2.2s", "startedAt": "2026-02-28T09:45:00Z", "completedAt": "2026-02-28T09:45:02Z", "stepsCompleted": 4, "totalSteps": 4 },
+    { "id": "run-016", "automationId": "auto-004", "automationName": "Invoice OCR & Routing", "projectId": "proj-004", "status": "success", "duration": "6.3s", "startedAt": "2026-02-27T14:15:00Z", "completedAt": "2026-02-27T14:15:06Z", "stepsCompleted": 4, "totalSteps": 4 },
+    { "id": "run-017", "automationId": "auto-006", "automationName": "Slack Command Router", "projectId": "proj-007", "status": "running", "duration": "0.2s", "startedAt": "2026-02-28T10:48:00Z", "completedAt": "", "stepsCompleted": 1, "totalSteps": 5 },
+    { "id": "run-018", "automationId": "auto-001", "automationName": "New User Welcome Sequence", "projectId": "proj-001", "status": "success", "duration": "3.5s", "startedAt": "2026-02-28T07:20:00Z", "completedAt": "2026-02-28T07:20:04Z", "stepsCompleted": 5, "totalSteps": 5 },
+    { "id": "run-019", "automationId": "auto-002", "automationName": "CRM Data Sync", "projectId": "proj-002", "status": "failed", "duration": "8.1s", "startedAt": "2026-02-27T22:30:00Z", "completedAt": "2026-02-27T22:30:08Z", "stepsCompleted": 1, "totalSteps": 4, "errorMessage": "Salesforce API authentication token expired. Auto-refresh failed — manual re-auth required." },
+    { "id": "run-020", "automationId": "auto-004", "automationName": "Invoice OCR & Routing", "projectId": "proj-004", "status": "success", "duration": "4.9s", "startedAt": "2026-02-27T11:00:00Z", "completedAt": "2026-02-27T11:00:05Z", "stepsCompleted": 4, "totalSteps": 4 }
+  ],
+  "metrics": [
+    { "label": "Total Runs", "value": "173,860", "change": "+12.5%", "changeType": "positive", "icon": "Play" },
+    { "label": "Success Rate", "value": "98.4%", "change": "+0.8%", "changeType": "positive", "icon": "CheckCircle" },
+    { "label": "Avg Duration", "value": "3.2s", "change": "-15%", "changeType": "positive", "icon": "Clock" },
+    { "label": "Active Automations", "value": "24", "change": "+3", "changeType": "positive", "icon": "Workflow" }
+  ],
+  "notifications": [
+    { "id": "n1", "title": "Automation Failed", "message": "Invoice OCR & Routing failed due to file size limit exceeded.", "type": "error", "timestamp": "2026-02-28T09:55:00Z", "read": false },
+    { "id": "n2", "title": "New Team Member", "message": "Raj Gupta accepted the invitation and joined the workspace.", "type": "success", "timestamp": "2026-02-28T08:30:00Z", "read": false },
+    { "id": "n3", "title": "Usage Alert", "message": "You have used 80% of your monthly API calls (40,000 of 50,000).", "type": "warning", "timestamp": "2026-02-27T18:00:00Z", "read": false },
+    { "id": "n4", "title": "Model Retrained", "message": "Drift detector triggered retraining. New model accuracy: 97.2%.", "type": "info", "timestamp": "2026-02-28T02:14:00Z", "read": true },
+    { "id": "n5", "title": "Workflow Updated", "message": "CRM Data Sync automation was updated by Alex Morgan.", "type": "info", "timestamp": "2026-02-27T15:30:00Z", "read": true },
+    { "id": "n6", "title": "Payment Received", "message": "February invoice for Professional plan ($49.00) processed successfully.", "type": "success", "timestamp": "2026-02-01T00:00:00Z", "read": true },
+    { "id": "n7", "title": "Security Update", "message": "SOC 2 audit compliance report is now available for download.", "type": "info", "timestamp": "2026-02-25T10:00:00Z", "read": true },
+    { "id": "n8", "title": "Rate Limit Warning", "message": "SendGrid API approaching rate limit for welcome email sequences.", "type": "warning", "timestamp": "2026-02-28T08:30:00Z", "read": false },
+    { "id": "n9", "title": "New Integration", "message": "Snowflake integration is now available — connect your data warehouse.", "type": "info", "timestamp": "2026-02-26T12:00:00Z", "read": true },
+    { "id": "n10", "title": "Deployment Complete", "message": "Slack Command Router v2.1 deployed to production successfully.", "type": "success", "timestamp": "2026-02-27T14:00:00Z", "read": true }
+  ],
+  "teamMembers": [
+    { "id": "tm-1", "name": "Alex Morgan", "email": "alex@neuraflow.io", "role": "owner", "avatarId": "photo-1472099645785-5658abf4ff4e", "joinedAt": "2025-06-15T00:00:00Z", "status": "active" },
+    { "id": "tm-2", "name": "Sarah Chen", "email": "sarah.chen@meridian.io", "role": "admin", "avatarId": "photo-1573496359142-b8d87734a5a2", "joinedAt": "2025-07-20T00:00:00Z", "status": "active" },
+    { "id": "tm-3", "name": "Marcus Rivera", "email": "marcus@quantumlabs.dev", "role": "member", "avatarId": "photo-1507003211169-0a1dd7228f2d", "joinedAt": "2025-09-01T00:00:00Z", "status": "active" },
+    { "id": "tm-4", "name": "Emily Nakamura", "email": "emily.n@stratos.cloud", "role": "member", "avatarId": "photo-1580489944761-15a19d654956", "joinedAt": "2025-10-10T00:00:00Z", "status": "active" },
+    { "id": "tm-5", "name": "Priya Patel", "email": "priya@neuraflow.io", "role": "admin", "avatarId": "photo-1573496359142-b8d87734a5a2", "joinedAt": "2025-08-05T00:00:00Z", "status": "active" },
+    { "id": "tm-6", "name": "James Lee", "email": "jlee@techcorp.com", "role": "member", "avatarId": "photo-1507003211169-0a1dd7228f2d", "joinedAt": "2025-11-15T00:00:00Z", "status": "active" },
+    { "id": "tm-7", "name": "Raj Gupta", "email": "raj.gupta@devhub.io", "role": "member", "avatarId": "photo-1472099645785-5658abf4ff4e", "joinedAt": "2026-02-28T00:00:00Z", "status": "active" },
+    { "id": "tm-8", "name": "Lisa Thompson", "email": "lisa.t@dataworks.co", "role": "viewer", "avatarId": "photo-1580489944761-15a19d654956", "joinedAt": "2026-02-25T00:00:00Z", "status": "invited" }
+  ],
+  "alertRules": [
+    { "id": "alert-1", "name": "High Failure Rate", "condition": "Failure rate exceeds threshold", "threshold": "> 5% in 1 hour", "channel": "slack", "enabled": true, "lastTriggered": "2026-02-20T14:30:00Z" },
+    { "id": "alert-2", "name": "Slow Execution", "condition": "Average duration exceeds threshold", "threshold": "> 30s avg over 10 runs", "channel": "email", "enabled": true, "lastTriggered": "2026-02-15T09:00:00Z" },
+    { "id": "alert-3", "name": "API Usage Warning", "condition": "Monthly API calls approaching limit", "threshold": "> 80% of plan limit", "channel": "email", "enabled": true, "lastTriggered": "2026-02-27T18:00:00Z" },
+    { "id": "alert-4", "name": "Automation Stopped", "condition": "Automation disabled or errored out", "threshold": "Any automation stops", "channel": "slack", "enabled": true },
+    { "id": "alert-5", "name": "Security Incident", "condition": "Critical security alert detected", "threshold": "Severity >= Critical", "channel": "webhook", "enabled": false }
+  ]
+}
